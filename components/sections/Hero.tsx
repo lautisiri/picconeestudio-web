@@ -34,9 +34,8 @@ export function Hero() {
           sizes="100vw"
           className="object-cover object-right"
         />
-        <div className="absolute inset-0 bg-navy-deep/80" />
-        <div className="absolute inset-0 bg-gradient-to-r from-navy-deep via-navy-deep/75 to-navy-deep/30" />
-        <div className="absolute inset-0 bg-gradient-to-t from-navy-deep via-navy-deep/30 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-navy-deep via-navy-deep/45 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-navy-deep/50 via-transparent to-transparent" />
         <div
           className="absolute -top-40 right-[-10%] h-[520px] w-[520px] rounded-full opacity-20 blur-3xl"
           style={{
