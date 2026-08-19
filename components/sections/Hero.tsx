@@ -24,7 +24,7 @@ export function Hero() {
       id="inicio"
       className="relative flex min-h-[100svh] items-center overflow-hidden bg-navy-deep"
     >
-      {/* Fondo: fotografía institucional con superposición navy para legibilidad */}
+      {/* Fondo: fotografía institucional, sin capas encima */}
       <div className="absolute inset-0" aria-hidden="true">
         <Image
           src="/hero-bg.png"
@@ -34,8 +34,6 @@ export function Hero() {
           sizes="100vw"
           className="object-cover object-right"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-navy-deep via-navy-deep/45 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-t from-navy-deep/50 via-transparent to-transparent" />
         <div
           className="absolute -top-40 right-[-10%] h-[520px] w-[520px] rounded-full opacity-20 blur-3xl"
           style={{
