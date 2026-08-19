@@ -62,13 +62,12 @@ export function ConsultoriaCorporativa() {
             </FadeIn>
             <FadeIn delay={0.1}>
               <p className="mt-6 font-sans text-base leading-relaxed text-cream/65 lg:text-[1.05rem]">
-                Representa un soporte notarial permanente que comprende
-                consultas notariales de la empresa, análisis de
-                documentación y contratos previo a su firma, y
-                asesoramiento respecto de la documentación que deba
-                certificarse, protocolizarse o instrumentarse, brindando un
-                servicio de acompañamiento y asistencia notarial mensual,
-                adaptado a las necesidades de la empresa.
+                Soporte notarial mensual y permanente para empresas, que
+                comprende consultas notariales, revisión de documentación y
+                contratos previo a su firma, así como asesoramiento sobre
+                certificaciones, protocolizaciones e instrumentos
+                notariales, brindando acompañamiento continuo y adaptado a
+                sus necesidades.
               </p>
             </FadeIn>
             <FadeIn delay={0.18}>

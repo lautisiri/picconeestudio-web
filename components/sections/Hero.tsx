@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { ArrowRight, ChevronDown } from "lucide-react";
 
@@ -23,35 +24,19 @@ export function Hero() {
       id="inicio"
       className="relative flex min-h-[100svh] items-center overflow-hidden bg-navy-deep"
     >
-      {/* Fondo institucional abstracto: columnas y líneas arquitectónicas */}
+      {/* Fondo: fotografía institucional con superposición navy para legibilidad */}
       <div className="absolute inset-0" aria-hidden="true">
-        <div className="absolute inset-0 bg-gradient-to-b from-navy-deep via-navy to-navy-deep" />
-        <svg
-          className="absolute inset-0 h-full w-full opacity-[0.16]"
-          viewBox="0 0 1440 900"
-          preserveAspectRatio="xMidYMax slice"
-          fill="none"
-        >
-          {Array.from({ length: 13 }).map((_, i) => {
-            const x = 40 + i * 115;
-            return (
-              <rect
-                key={i}
-                x={x}
-                y={260}
-                width="30"
-                height="640"
-                fill="none"
-                stroke="#d4b878"
-                strokeWidth="1"
-              />
-            );
-          })}
-          <line x1="0" y1="260" x2="1440" y2="260" stroke="#d4b878" strokeWidth="1" />
-          <line x1="0" y1="245" x2="1440" y2="245" stroke="#d4b878" strokeWidth="1" />
-        </svg>
-        <div className="absolute inset-0 bg-gradient-to-t from-navy-deep via-navy-deep/40 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-r from-navy-deep/70 via-transparent to-navy-deep/50" />
+        <Image
+          src="/hero-bg.png"
+          alt=""
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-right"
+        />
+        <div className="absolute inset-0 bg-navy-deep/80" />
+        <div className="absolute inset-0 bg-gradient-to-r from-navy-deep via-navy-deep/75 to-navy-deep/30" />
+        <div className="absolute inset-0 bg-gradient-to-t from-navy-deep via-navy-deep/30 to-transparent" />
         <div
           className="absolute -top-40 right-[-10%] h-[520px] w-[520px] rounded-full opacity-20 blur-3xl"
           style={{

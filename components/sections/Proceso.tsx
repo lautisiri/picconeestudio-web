@@ -1,4 +1,6 @@
 import { FadeIn } from "@/components/animation/FadeIn";
+import { WhatsAppIcon } from "@/components/ui/WhatsAppIcon";
+import { whatsappHref } from "@/lib/site";
 
 const steps = [
   {
@@ -21,6 +23,11 @@ const steps = [
     title: "Gestión",
     text: "El estudio acompaña y realiza las actuaciones correspondientes.",
   },
+  {
+    number: "05",
+    title: "Resultado",
+    text: "La gestión realizada culmina con el resultado esperado.",
+  },
 ];
 
 export function Proceso() {
@@ -39,7 +46,7 @@ export function Proceso() {
             className="absolute left-0 right-0 top-6 hidden h-px bg-ink/10 lg:block"
             aria-hidden="true"
           />
-          <div className="grid gap-10 lg:grid-cols-4 lg:gap-8">
+          <div className="grid gap-10 lg:grid-cols-5 lg:gap-6">
             {steps.map((step, i) => (
               <FadeIn key={step.number} delay={i * 0.1}>
                 <div className="relative">
@@ -57,6 +64,20 @@ export function Proceso() {
             ))}
           </div>
         </div>
+
+        <FadeIn delay={0.5} className="mt-14 flex justify-center">
+          <a
+            href={whatsappHref(
+              "Hola Piccone Estudio, quisiera solicitar asesoramiento."
+            )}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-primary"
+          >
+            <WhatsAppIcon className="h-4 w-4" />
+            Iniciar consulta por WhatsApp
+          </a>
+        </FadeIn>
       </div>
     </section>
   );

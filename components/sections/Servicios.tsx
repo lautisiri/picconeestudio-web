@@ -28,7 +28,7 @@ const services = [
     icon: Scale,
     title: "Sector Jurídico",
     description:
-      "Asesoramiento y servicios jurídicos en distintas ramas del Derecho. Trabajamos en conjunto con abogados colaboradores especializados, brindando atención y seguimiento personalizado.",
+      "Asesoramiento y servicios jurídicos en distintas ramas del Derecho. Junto a abogados colaboradores especializados, ofrecemos asesoramiento integral y seguimiento personalizado en cada asunto.",
   },
   {
     index: "03",

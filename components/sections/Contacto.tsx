@@ -1,6 +1,7 @@
-import { Mail, Phone, Globe, MessageCircle } from "lucide-react";
+import { Mail } from "lucide-react";
 import { FadeIn } from "@/components/animation/FadeIn";
 import { ContactForm } from "@/components/forms/ContactForm";
+import { WhatsAppIcon } from "@/components/ui/WhatsAppIcon";
 import { siteConfig, mailtoHref, whatsappHref } from "@/lib/site";
 
 export function Contacto() {
@@ -42,16 +43,10 @@ export function Contacto() {
                     className="group flex items-center gap-3.5 font-sans text-sm text-ink/75 transition-colors hover:text-navy"
                   >
                     <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-navy/5 text-navy transition-colors group-hover:bg-navy group-hover:text-gold-light">
-                      <Phone className="h-4 w-4" strokeWidth={1.75} />
+                      <WhatsAppIcon className="h-4 w-4" />
                     </span>
                     {siteConfig.phoneDisplay}
                   </a>
-                </li>
-                <li className="flex items-center gap-3.5 font-sans text-sm text-ink/75">
-                  <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-navy/5 text-navy">
-                    <Globe className="h-4 w-4" strokeWidth={1.75} />
-                  </span>
-                  {siteConfig.domain}
                 </li>
               </ul>
 
@@ -63,7 +58,7 @@ export function Contacto() {
                 rel="noopener noreferrer"
                 className="btn-primary mt-10 w-full sm:w-auto"
               >
-                <MessageCircle className="h-4 w-4" strokeWidth={1.75} />
+                <WhatsAppIcon className="h-4 w-4" />
                 Escribir por WhatsApp
               </a>
             </FadeIn>
