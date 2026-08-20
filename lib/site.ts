@@ -1,8 +1,8 @@
 export const siteConfig = {
   name: "Piccone Estudio",
   legalName: "Piccone Estudio",
-  domain: "picconeestudio.com.uy",
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://picconeestudio.com.uy",
+  domain: "piccone.com.uy",
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://piccone.com.uy",
   email: "estudio@piccone.com.uy",
   phoneDisplay: "092 723 916",
   whatsappNumber: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? "59892723916",
