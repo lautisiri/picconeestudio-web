@@ -18,11 +18,11 @@ export function Logo({ tone = "dark", className = "" }: LogoProps) {
     <span className={`inline-flex items-center gap-3 ${className}`}>
       <span className="relative h-14 w-14 shrink-0 overflow-hidden rounded-full bg-navy shadow-soft ring-1 ring-gold/30 sm:h-16 sm:w-16">
         <Image
-          src="/logo-nuevo.jpg"
+          src="/logo-letras.jpg"
           alt=""
           fill
           sizes="64px"
-          className="scale-[1.3] object-cover object-center"
+          className="object-cover object-center"
           priority
         />
       </span>

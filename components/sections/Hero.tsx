@@ -57,13 +57,9 @@ export function Hero() {
         className="container-px relative z-10 mx-auto w-full max-w-content pt-28 pb-20 lg:pt-32"
       >
         <div className="max-w-2xl">
-          <motion.span variants={item} className="section-label !text-gold-light">
-            Estudio Profesional
-          </motion.span>
-
           <motion.h1
             variants={item}
-            className="mt-7 font-display text-[2.6rem] font-medium leading-[1.08] tracking-tight text-cream sm:text-6xl lg:text-[4.2rem]"
+            className="font-display text-[2.6rem] font-medium leading-[1.08] tracking-tight text-cream sm:text-6xl lg:text-[4.2rem]"
           >
             Asesoramiento integral para personas y empresas
           </motion.h1>
